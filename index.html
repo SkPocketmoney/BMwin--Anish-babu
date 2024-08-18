@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMWIN - Earn with Fun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #f3f3f3;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: #fbb034;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #f3f3f3;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fbb034;
+        }
+
+        .welcome-banner {
+            background-image: url('/storage/emulated/0/Download/4ddd6b9e7f9c0d6966ed507150e82983_high.webp');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 170px 20px;
+            animation: fadeIn 2s ease-in-out;
+            color: #1c1c1c;
+            position: relative;
+            z-index: 1;
+        }
+
+        .welcome-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.431);
+            z-index: -2;
+        }
+
+        .welcome-banner h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .welcome-banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #fbb034;
+            color: #334;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f06292;
+            color: #333;
+            transform: scale(1.05);
+        }
+
+        .games {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .games h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .game-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .game-card {
+            margin: 10px;
+            padding: 20px;
+            width: 140px;
+            height: 100px;
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .game-card h3 {
+            font-size: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .game-card:hover {
+            transform: scale(1.1);
+        }
+
+        .game-card.aviator {
+            background-image: url('/storage/emulated/0/Download/images.jpeg');
+        }
+
+        .game-card.wingo {
+            background-image: url('/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20240818-WA0002.jpg');
+        }
+
+        .game-card.roulette {
+            background-image: url('/storage/emulated/0/Download/images (6).jpeg');
+        }
+
+        .game-card.blackjack {
+            background-image: url('/storage/emulated/0/Download/images (2).jpeg');
+        }
+
+        .game-card.poker {
+            background-image: url('/storage/emulated/0/Download/images (4).jpeg');
+        }
+
+        .game-card.slots {
+            background-image: url('/storage/emulated/0/Download/unnamed.webp');
+        }
+
+        .game-card.baccarat {
+            background-image: url('/storage/emulated/0/Download/images (5).jpeg');
+        }
+
+        
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #f3f3f3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BMWIN</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#our-games">Games</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-banner">
+        <h2>Welcome to BMWIN</h2>
+        <p>Sign up today and get your ₹100 welcome bonus!</p>
+        <button class="btn">Claim Bonus ₹100 Now</button>
+    </section>
+
+    <section class="games" id="our-games">
+        <h2>Our Games</h2>
+        <div class="game-cards">
+            <div class="game-card wingo">
+                
+            </div>
+            <div class="game-card aviator">
+                
+            </div>
+            <div class="game-card roulette">
+                
+            </div>
+            <div class="game-card blackjack">
+                
+            </div>
+            <div class="game-card poker">
+                
+            </div>
+            <div class="game-card slots">
+                
+            </div>
+            <div class="game-card baccarat">
+                
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 BMWIN. All rights reserved.</p>
+        <p>Created by - Anish Babu.</p>
+    </footer>
+</body>
+</html>
